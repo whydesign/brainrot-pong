@@ -10,7 +10,7 @@ A small fun project in JavaScript, inspired by Toffalini Leonardo's [ADHD Trap p
 
 ## Config
 
-YIt is possible to adjust some parameters via ``config.js`` and thus change the appearance and behavior.
+It is possible to adjust some parameters via ``config.js`` and thus change the appearance and behavior.
 
 ```js
 export default {
