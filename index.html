@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow, noai, noimageai">
+    <meta http-equiv="X-Robots-Tag" content="noindex, noarchive, nosnippet, noai, noimageai">
+
+    <title>Brainrot Pong Trap aka. Doompong</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="bg-left"></div>
+    <div class="bg-right"></div>
+
+    <div class="canvas-wrapper" data-left="50" data-right="50">
+        <canvas id="gameCanvas"></canvas>
+    </div>
+
+    <div id="crt"></div>
+
+    <div class="info">
+        <img src="images/info-square-rounded.svg" alt="info" width="30" data-micromodal-trigger="modal">
+    </div>
+
+    <div id="modal" class="modal micromodal-slide" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1">
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+                <button class="modal__close" aria-label="Close modal" data-micromodal-close><img src="images/square-rounded-x.svg"></button>
+                <p class="modal__content">Made with ☕ and 🚀 by  <a href="https://web-dev.wtf/" target="_blank" tabindex="-1">WebDevWTF</a>.</p>
+                <p class="modal__content">🏳️‍🌈🏴‍☠🐈‍⬛️</p>
+                <p class="modal__content">Copyright © 2025 Ludwig Jäschke (info@whydesign-halle.de)<br><br>
+                    This work is free. You can redistribute it and/or modify it under the
+                    terms of the Do What The Fuck You Want To Public License, Version 2,
+                    as published by Sam Hocevar. See the COPYING file for more details.</p>
+                <hr>
+                <p class="modal__content">Brainrot Pong is inspired by Toffalini Leonardo's ADHD Trap Lua code on <a href="https://github.com/leonardo-toffalini/adhd-trap" target="_blank" tabindex="-1">github.com/leonardo-toffalini/adhd-trap</a>.</p>
+                <p class="modal__content">All icons are from <a href="https://tabler.io/icons" target="_blank" tabindex="-1">tabler.io/icons</a>.</p>
+                <p class="modal__content">This modal made with <a href="https://micromodal.vercel.app/" target="_blank" tabindex="-1">Micromodal.js</a>.</p>
+                <hr>
+                <p class="modal__content">
+                    DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE<br>
+                    Version 2, December 2004<br><br>
+                    Copyright (C) 2004 Sam Hocevar (sam@hocevar.net)<br><br>
+                    Everyone is permitted to copy and distribute verbatim or modified copies of this license document, and changing it is allowed as long as the name is changed.<br><br>
+                    DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE<br>
+                    TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION<br><br>
+                    0. You just DO WHAT THE FUCK YOU WANT TO.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/libs/confetti.js" defer></script>
+    <script type="module" src="js/app/main.js"></script>
+
+    <script src="https://unpkg.com/micromodal@0.6.1/dist/micromodal.js"></script>
+    <script type="module">
+        document.addEventListener('DOMContentLoaded', () => {
+            MicroModal.init();
+            MicroModal.show('modal');
+            MicroModal.close('modal');
+        });
+    </script>
+</body>
+</html>
