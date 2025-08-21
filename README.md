@@ -8,6 +8,8 @@ A small fun project in JavaScript, inspired by Toffalini Leonardo's [ADHD Trap p
 
 ![Brainrot Pong Preview](./images/preview.gif)
 
+Live preview on [doompong.web-dev.wtf](http://doompong.web-dev.wtf/)
+
 ## Config
 
 It is possible to adjust some parameters via ``config.js`` and thus change the appearance and behavior.
